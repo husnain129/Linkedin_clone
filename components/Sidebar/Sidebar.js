@@ -2,8 +2,8 @@ import React from 'react'
 
 const Sidebar = () => {
   return (
-    <div className="flex h-full w-full flex-col items-end  gap-3 pt-4 text-3xl">
-      <div className="flex h-auto w-56 flex-col items-center justify-between overflow-hidden rounded-lg border border-[#d3d2d0] bg-white shadow-md">
+    <div className="flex h-full w-full flex-col items-center gap-3 pt-4 text-3xl  sm:items-center tab:items-end md:items-end">
+      <div className="flex h-auto w-[90%] flex-col items-center justify-between overflow-hidden rounded-lg border border-[#d3d2d0] bg-white shadow-md sm:w-[90%] tab:w-56 md:w-56">
         <div className="relative z-0 h-16 w-full bg-blue-600">
           <img src="/girl.jpg" alt="" className="h-full w-full object-cover" />
           <img
@@ -40,7 +40,7 @@ const Sidebar = () => {
           <p className="text-xs text-gray-600">My items</p>
         </div>
       </div>
-      <div className="sticky top-8 flex h-auto w-56 flex-col gap-1 rounded-md border border-[#d3d2d0] bg-white px-2 pt-3 shadow-lg">
+      <div className="sticky top-8 flex h-auto w-[90%] flex-col gap-1 rounded-md border border-[#d3d2d0] bg-white px-2 pt-3 shadow-lg sm:w-[90%] tab:w-56 md:w-56">
         <p className="text-sm text-blue-600">Group</p>
         <div className="flex items-center justify-between">
           <p className="text-sm text-blue-600">Events</p>

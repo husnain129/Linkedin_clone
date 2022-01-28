@@ -2,7 +2,7 @@ import React from 'react'
 
 const Sidebar = () => {
   return (
-    <div className="flex h-full w-full flex-col items-center gap-3 pt-4 text-3xl  sm:items-center tab:items-end md:items-end">
+    <div className="flex h-auto w-full flex-col items-center gap-3 pt-4 text-3xl  sm:items-center tab:items-end md:items-end">
       <div className="flex h-auto w-[90%] flex-col items-center justify-between overflow-hidden rounded-lg border border-[#d3d2d0] bg-white shadow-md sm:w-[90%] tab:w-56 md:w-56">
         <div className="relative z-0 h-16 w-full bg-blue-600">
           <img src="/girl.jpg" alt="" className="h-full w-full object-cover" />

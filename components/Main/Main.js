@@ -32,11 +32,13 @@ const Main = () => {
             placeholder="Start a post"
           />
         </div>
-        <div className="flex w-[85%] items-start justify-between">
+        <div className="flex w-[85%] flex-wrap items-center justify-between">
           {Post.map((e, i) => (
             <div key={i} className=" flex items-center justify-center gap-2">
               <e.icon size={24} style={{ color: e.color, opacity: '.8' }} />
-              <p className="text-sm">{e.title}</p>
+              <p className="hidden text-sm sm:hidden tab:block md:block">
+                {e.title}
+              </p>
             </div>
           ))}
         </div>
@@ -47,14 +49,14 @@ const Main = () => {
           Sort by:<span className="font-semibold text-black">Top</span>
         </p>
       </div>
-      <Posts />
-      <Posts />
-      <Posts />
+      <Posts imgURL="joker.jpg" />
+      <Posts imgURL="girl.jpg" />
+      <Posts imgURL="cup.jpg" />
     </div>
   )
 }
 
-const Posts = () => {
+const Posts = ({ imgURL }) => {
   return (
     <div className="flex h-auto w-[90%] flex-col gap-6 rounded-md bg-white p-4">
       <div className="item-center flex justify-between">
@@ -74,31 +76,31 @@ const Posts = () => {
         </div>
         <FiMoreHorizontal size={24} className="cursor-pointer text-gray-600" />
       </div>
-      <img src="joker.jpg" alt="" className="rounded" />
+      <img src={imgURL} alt="" className="rounded" />
       <span className="h-[1px] w-[100%] bg-[#bdbcbb]" />
 
-      <div className="flex w-[100%] items-center justify-between px-[5%] ">
+      <div className="flex w-[100%] items-center justify-between px-0 sm:px-0 tab:px-[4%] md:px-[5%] ">
         <div className="flex cursor-pointer items-start justify-center gap-2">
           <FaRegThumbsDown
             size={23}
             className="rotate-180 text-[#bdbcbb] hover:text-black"
           />
-          <p>Like</p>
+          <p className="hidden sm:hidden tab:block md:block">Like</p>
         </div>
         <div className="flex cursor-pointer items-start justify-center gap-2 ">
           <RiMessage3Line
             className="text-[#bdbcbb] hover:text-black"
             size={23}
           />
-          <p>Message</p>
+          <p className="hidden sm:hidden tab:block md:block">Message</p>
         </div>
         <div className="flex cursor-pointer items-start justify-center gap-2 ">
           <IoMdShareAlt className="text-[#bdbcbb] hover:text-black" size={23} />
-          <p>Share</p>
+          <p className="hidden sm:hidden tab:block md:block">Share</p>
         </div>
         <div className="flex cursor-pointer items-start justify-center gap-2 ">
           <IoIosSend className="text-[#bdbcbb] hover:text-black" size={24} />
-          <p>Send</p>
+          <p className="hidden sm:hidden tab:block md:block">Send</p>
         </div>
       </div>
     </div>

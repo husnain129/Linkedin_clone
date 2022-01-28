@@ -19,10 +19,10 @@ export default function Home() {
         <Header />
       </div>
       <div className="flex h-auto flex-col items-center justify-between bg-[#F3F2EF] sm:items-center sm:justify-center tab:flex-row tab:items-start tab:justify-center md:flex-row md:items-start md:justify-between">
-        <div className="flex h-auto w-full flex-[1] sm:flex-[1] tab:flex-[.31] md:flex-[.25] ">
+        <div className="flex w-full flex-[1] sm:flex-[1] tab:flex-[.31] md:flex-[.25] ">
           <Sidebar />
         </div>
-        <div className="flex h-auto w-full flex-[1] sm:flex-[1] tab:flex-[.69] md:flex-[.42]">
+        <div className="flex w-full flex-[1] sm:flex-[1] tab:flex-[.69] md:h-auto md:flex-[.42]">
           <Main />
         </div>
         <div className="hidden h-auto w-full flex-[.33] sm:hidden md:flex">

@@ -14,6 +14,7 @@ const Header = () => {
       <div className="flex h-full items-center justify-between tab:w-full md:w-full">
         {Icon.map((e, i) => (
           <div
+            key={i}
             className="group relative flex cursor-pointer flex-col items-center justify-center px-2 
            before:absolute before:bottom-[-5px] before:block 
           before:h-[2px] before:w-full before:scale-[1.1] before:bg-black before:opacity-0 hover:before:opacity-100"

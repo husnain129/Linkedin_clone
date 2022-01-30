@@ -16,28 +16,6 @@ const Tags = [
   'More',
 ]
 
-// const HeaderIcon = [
-//   {
-//     icon: <TiHome size={22} className="" style={{ color: '#6e6558' }} />,
-//     title: 'Home',
-//   },
-//   {
-//     icon: <BsPeopleFill size={22} style={{ color: '#6e6558' }} />,
-//     title: 'Network',
-//   },
-//   {
-//     icon: <BsFillBagDashFill size={22} style={{ color: '#6e6558' }} />,
-//     title: 'Jobs',
-//   },
-//   {
-//     icon: <RiMessage3Fill size={22} style={{ color: '#6e6558' }} />,
-//     title: 'Messaging',
-//   },
-//   {
-//     icon: <IoNotifications size={22} style={{ color: '#6e6558' }} />,
-//     title: 'Messaging',
-//   },
-// ]
 const HeaderIcon = [
   {
     icon: TiHome,

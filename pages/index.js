@@ -18,7 +18,11 @@ export default function Home() {
       <div className="h-[8vh] w-full">
         <Header />
       </div>
-      <div className="flex h-auto flex-col items-center justify-between bg-[#F3F2EF] sm:items-center sm:justify-center tab:flex-row tab:items-start tab:justify-center md:flex-row md:items-start md:justify-between">
+      <div
+        className="flex h-auto flex-col items-center justify-between bg-[#F3F2EF]
+        sm:items-center sm:justify-center tab:flex-row tab:items-start tab:justify-center
+        md:flex-row md:items-start md:justify-between"
+      >
         <div className="flex w-full flex-[1] sm:flex-[1] tab:flex-[.31] md:flex-[.25] ">
           <Sidebar />
         </div>
